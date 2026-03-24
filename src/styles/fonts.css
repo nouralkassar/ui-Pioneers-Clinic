@@ -1,0 +1,9 @@
+/* Import Arabic Font - Cairo */
+@import url('https://fonts.googleapis.com/css2?family=Cairo:wght@300;400;500;600;700;800&display=swap');
+
+/* Apply Cairo font to all elements in RTL mode */
+html[dir="rtl"],
+html[dir="rtl"] body,
+html[dir="rtl"] * {
+  font-family: 'Cairo', -apple-system, BlinkMacSystemFont, 'Segoe UI', sans-serif;
+}

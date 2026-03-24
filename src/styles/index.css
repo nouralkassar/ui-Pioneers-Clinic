@@ -1,0 +1,21 @@
+@import './fonts.css';
+@import './tailwind.css';
+@import './theme.css';
+
+/* RTL Support for Arabic */
+html[dir="rtl"] * {
+  direction: rtl;
+  text-align: start;
+}
+
+/* Fix for icons and buttons in RTL */
+html[dir="rtl"] .flex-row-reverse {
+  flex-direction: row-reverse;
+}
+
+/* Ensure proper spacing in RTL */
+html[dir="rtl"] .gap-2 > * + *,
+html[dir="rtl"] .gap-3 > * + *,
+html[dir="rtl"] .gap-4 > * + * {
+  margin-right: 0;
+}
